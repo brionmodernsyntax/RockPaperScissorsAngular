@@ -1,0 +1,35 @@
+.grid-container {
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 2fr 3fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "score"
+    "fists"
+    "buttons";
+  width: 100vw;
+  height: 100vh;
+}
+
+.fists {
+  display: flex;
+  justify-content: center;
+  grid-area: fists;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  grid-area: buttons;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  grid-area: score;
+}

@@ -1,0 +1,19 @@
+<div class="grid-container">
+  <!-- scoreboard -->
+  <div class="score">
+    <app-scoreboard *ngIf="result != undefined" [result]="result" [playerScore]="playerScore" [cpuScore]="cpuScore">
+
+    </app-scoreboard>
+  </div>
+  <!-- fists -->
+  <div class="fists">
+    <app-fist *ngIf="selected != undefined && cpu != undefined" [playerIcon]="selected" [cpuIcon]="cpu">
+    </app-fist>
+  </div>
+  <!-- button -->
+  <div class="buttons">
+    <app-button title="Rock" (click)="calculate(0)"></app-button>
+    <app-button title="Paper" (click)="calculate(1)"></app-button>
+    <app-button title="Scissors" (click)="calculate(2)"></app-button>
+  </div>
+</div>

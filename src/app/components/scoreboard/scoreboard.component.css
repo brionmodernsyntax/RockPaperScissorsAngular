@@ -1,0 +1,24 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "playerScore cpuScore"
+    "result result";
+}
+.playerScore {
+  grid-area: playerScore;
+}
+.cpuScore {
+  grid-area: cpuScore;
+}
+.cpuScore, .playerScore h1 {
+  color: red;
+}
+.result {
+  grid-area: result;
+}
+.result h1 {
+  color: red;
+}
